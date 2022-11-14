@@ -41,11 +41,11 @@ optimized_torchscript_model.save("fbdeit.pt")
 Changes in `MainActivity.java` file from:
 
 ```py
-module = Module.load(assetFilePath(this, "model.pt"));
-```py
+module = Module.load(assetFilePath(this, "model.pt"))
+```
 to
 ```py
-module = Module.load(assetFilePath(this, "fbdeit.pt"));
+module = Module.load(assetFilePath(this, "fbdeit.pt"))
 ```
 
 Run the app in Android Studio and you'll see the same image classification result.
@@ -62,12 +62,11 @@ On a Terminal, with PyTorch 1.7.0 and [einops](https://pypi.org/project/einops/)
 python mnist_vit.py
 ```
 
-The model definition in `vit_pytorch.py` and training code in `mnist_vit.py` are mostly taken from the blog [here](https://towardsdatascience.com/a-demonstration-of-using-vision-transformers-in-pytorch-mnist-handwritten-digit-recognition-407eafbc15b0).
 
 ### 2. Build and run with Android Studio
 
 Run on your AVD or real Android device.
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
-![Screenshot 3](screenshot3.png)
+![Screenshot 1](images/screenshot1.png)
+![Screenshot 2](images/screenshot2.png)
+![Screenshot 3](images/screenshot3.png)
